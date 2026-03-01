@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 
 metadata:
-  name: guestbook-spoke1
+  name: guestbook-spoke2
   namespace: argocd
 
 spec:
@@ -14,7 +14,7 @@ spec:
     path: manifests/guestbook
 
   destination:
-    server: https://172.22.0.5:6443
+    server: https://172.22.0.8:6443
     namespace: default
 
   syncPolicy:
